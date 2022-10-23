@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+body{
+    font-family: 'Cinzel', serif;
+    margin:0;
+    color: rgb(203,247,245);
+}
+
+header{
+    background: linear-gradient(#9fa7a7, #639adc, #335e99);
+}
+
+header nav{
+    padding: 20px 3% 0px 3%;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1{
+    margin: 0;
+    font-size: 30px;
+}
+
+header nav .en-tete{
+    display: flex;
+    align-items: center;
+}
+
+header nav .en-tete p{
+    margin: 0 15px 0 0;
+    color: rgb(223, 252, 250);
+}
+
+header nav .en-tete p:hover{
+    color:rgb(191, 217, 216);
+    cursor: pointer;
+}
+
+header nav .en-tete button {
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: inherit;
+    border: 1px solid rgb(223, 252, 250);
+    color:rgb(223, 252, 250);
+    font-family: 'Cinzel', serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s; 
+}
+
+header nav .en-tete button:hover {
+    color: #9fa7a7;
+    background-color: rgb(223, 252, 250);
+}
+
+.promotion-objet{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.promotion-objet .presentation{
+    padding: 30px 5%;
+    width: 100%;
+    flex-shrink: 3;
+}
+
+.promotion-objet .image-presentation .test{
+    width: 80%;
+}
+
+.promotion-objet .presentation h1{
+    margin: 0;
+    font-size: 4vw;
+    width: 50%;
+}
+
+.promotion-objet .presentation button{
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.promotion-objet .image-presentation img{
+    padding: 30px 5%;
+    width: 100%;
+}
+
+.presentation button{
+    padding: 30px 5%;
+    background-color: rgb(223, 252, 250);
+    border: 1px solid rgb(223, 252, 250);
+    font-family: 'Cinzel', serif;
+    color: #335e99;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.presentation button:hover{
+    background-color: inherit;
+    color: rgb(223, 252, 250);
+}
+
+.image-presentation .petites-images{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    
+}
+
+.image-presentation .petites-images .petite{
+    padding: 20px;
+    margin: 0 5px 5px 0;
+    transition: filter 0.5s;
+}
+
+.image-presentation .petites-images .petite:hover{
+    filter:brightness(150%);
+}
+
+.image-presentation .petites-images .petite img{
+    width: 180px;
+}
+
+
+.presentation p{
+    color:#9fa7a7;
+}
+
+.promotion-objet .description{
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.promotion-objet .telephone img{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.promotion-objet .description iframe{
+    margin-top: 30px;
+    height: 500px;
+}
+
+main{
+    background: linear-gradient(#220562, #335e99, #639adc);
+}
+
+footer{
+    margin: 0;
+    padding: 20px;
+    background-color: #a3b2c4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer h3{
+    color: #220562;
+}
+
+footer p{
+    color: #335e99;
+    cursor: pointer;
+}
+
+footer p:hover{
+    color: #639adc;
+}
+
+@media screen and (max-width: 640px){
+    header nav .en-tete p{
+        display: none;
+    }
+
+    .image-presentation{
+        width: 80%;
+    }
+
+    .promotion-objet .presentation{
+        padding: 30px 0 0 30px;
+        width: 50%;
+    }
+
+    .promotion-objet .presentation h1{
+        font-size: 2em;
+    }
+
+    .promotion-objet .image-presentation img{
+        width: 80%;
+    }
+
+    .product-presentation .petites-images .petite img{
+        width: 90px;
+    }
+
+    .promotion-objet{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .promotion-objet .telephone img{
+        width: 90%;
+    }
+
+    .promotion-objet .description iframe{
+        margin-top: 20px;
+        height: 200px;
+    }
+
+    footer{
+        justify-content: center;
+    }
+    footer .colonne{
+        width: 80%;
+    }
+}
+
